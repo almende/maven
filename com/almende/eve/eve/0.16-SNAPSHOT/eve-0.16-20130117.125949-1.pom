@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
+	
 	<groupId>com.almende.eve</groupId>
 	<artifactId>eve</artifactId>
 	<version>0.16-SNAPSHOT</version>
@@ -53,28 +53,17 @@
 		</plugins>
 	</reporting>
 
-	<issueManagement>
-		<system>Github</system>
-		<url>https://github.com/almende/eve/issues</url>
-	</issueManagement>
-
-	<scm>
-		<url>scm:git:git://github.com/almende/maven.git</url>
-		<connection>scm:git:git://github.com/almende/maven.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:almende/maven.git</developerConnection>
-	</scm>
-	
 	<distributionManagement>
-		<downloadUrl>https://github.com/almende/eve/raw/master/repo</downloadUrl>
+		<downloadUrl>https://github.com/almende/maven/raw/master</downloadUrl>
 		<repository>
 			<id>eve-github</id> <!-- ${basedir} <url>scm:git:ssh://git@github.com:almende/eve.git</url> -->
-			<url>file:///${basedir}/../../../maven/snapshots</url>
-			<!-- <url>scm:git:ssh://git@github.com/almende/maven.git</url> -->
+			<url>file:///${basedir}/../../../maven</url>
 		</repository>
 	</distributionManagement>
 
 	<build>
 		<extensions>
+		    <!-- 
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
 				<artifactId>wagon-scm</artifactId>
@@ -95,6 +84,7 @@
 				<artifactId>maven-scm-api</artifactId>
 				<version>${maven.scm.version}</version>
 			</extension>
+			 -->
 		</extensions>
 
 		<pluginManagement>
